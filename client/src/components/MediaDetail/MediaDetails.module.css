@@ -1,0 +1,401 @@
+.banner {
+  width: 100vw;
+  background: var(--primary-color);
+}
+
+.media {
+  min-height: 350px;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0 20px 0;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.poster {
+  display: none;
+  height: 380px;
+  margin-right: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--secondary-color);
+  animation: load-poster 0.4s ease-out forwards;
+}
+
+.details {
+  color: #fff;
+  width: 100%;
+  animation: load-details 0.4s ease-out forwards;
+}
+
+.title {
+  font-size: 1.7rem;
+}
+
+.secondary_detail {
+  margin: 15px 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #dfdfdf;
+}
+
+.secondary_detail .genre {
+  margin: 5px 0;
+}
+
+.meta {
+  display: flex;
+  margin: 15px 0;
+}
+
+.trailer {
+  margin-left: 10px;
+  background: none;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+  cursor: pointer;
+  padding: 0 15px;
+  color: #fff;
+}
+.trailer:active {
+  transform: scale(0.98);
+}
+
+.tagline {
+  margin: 15px 0;
+  font-weight: bold;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.overview {
+  font-size: 1rem;
+  max-width: 850px;
+}
+.overview h3 {
+  margin-bottom: 5px;
+}
+.crew {
+  margin: 25px 0;
+}
+
+.other_info {
+}
+
+.cast_container {
+  padding: 0 10px;
+}
+.cast {
+  min-height: 350px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ccc;
+  border: 1px solid #ccc;
+  /* text-align: center; */
+}
+
+.cast_list_loading {
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.second,
+.third,
+.fourth,
+.fifth {
+  display: none;
+}
+
+.real_name {
+  font-weight: 700;
+  margin: 2px 0;
+}
+
+.meta_data {
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #333;
+  margin: auto;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.meta_container {
+  cursor: pointer;
+  padding: 20px;
+}
+.status {
+  margin: 15px 0;
+}
+.original_language {
+  margin: 15px 0;
+}
+.type {
+  margin: 15px 0;
+}
+.networks {
+  margin-top: 15px;
+}
+.network {
+  margin: 5px 10px 5px 0;
+  padding: 3px;
+  background: #fff;
+  display: inline-flex;
+  border-radius: 5px;
+  align-items: center;
+  user-select: none;
+}
+.keywords {
+  margin: 10px 0;
+  max-width: 350px;
+}
+.keywords h3 {
+  margin-bottom: 5px;
+}
+.keyword {
+  user-select: none;
+  background: var(--secondary-color);
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.recommended_container {
+  border-top: 1px solid #aaa;
+  width: 90%;
+  margin: 20px auto 0 auto;
+  padding: 20px 0;
+}
+
+.recommended_list {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px 10px;
+}
+
+.latest_season {
+  width: 90%;
+  margin: 20px auto;
+}
+.latest_season_container {
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 950px;
+  padding-right: 40px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.latest_season_container img {
+  height: 120px;
+  margin-right: 20px;
+}
+.latest_season_container h4:first-child {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+.season_detail {
+  padding: 5px 0;
+}
+.latest_season_overview {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  display: none;
+}
+.season_number {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+.all_seasons_link {
+  margin: 15px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.all_seasons_link:hover {
+  text-decoration: underline;
+}
+
+.trailer_container {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 500;
+}
+.trailer_holder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 250px;
+  width: 90%;
+  max-width: 650px;
+}
+.cross {
+  top: 5px;
+  right: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: rgba(0, 0, 0, 1);
+}
+.cross p {
+  font-size: 1.4rem;
+}
+.cross i {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 450px) {
+  .media {
+    min-height: 450px;
+    padding: 80px 0 20px 0;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .secondary_detail {
+    display: flex;
+    font-size: 1rem;
+  }
+  .secondary_detail .genre {
+    margin: 0 25px;
+  }
+  .meta {
+    align-items: center;
+    margin: 25px 0;
+  }
+  .meta .trailer {
+    height: 50px;
+  }
+  .tagline {
+    margin: 25px 0;
+    font-size: 1.2rem;
+  }
+  .overview {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  .recommended_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cast_list_loading {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .second {
+    display: block;
+  }
+  .season_number {
+    font-size: 1.4rem;
+  }
+  .latest_season_container img {
+    height: 180px;
+  }
+  .trailer_holder {
+    height: 350px;
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .cast_list_loading {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .cast_list_loading {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .third {
+    display: block;
+  }
+  .latest_season_overview {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .media {
+    min-height: 550px;
+  }
+  .poster {
+    display: block;
+  }
+  .recommended_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .other_info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cast_list {
+    width: 75%;
+  }
+  .meta_data {
+    margin: 10px;
+    width: 25%;
+  }
+  .meta_container {
+    padding: 10px 20px;
+  }
+  .keywords {
+    width: 100%;
+  }
+  .recommended_list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .cast_list_loading {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .fourth {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .cast_list_loading {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .fifth {
+    display: block;
+  }
+}
+
+@keyframes load-poster {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes load-details {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

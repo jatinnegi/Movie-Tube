@@ -1,0 +1,177 @@
+.season_detail {
+}
+
+.header {
+  background: linear-gradient(
+    to bottom right,
+    rgba(8.63%, 5.88%, 3.14%, 1),
+    rgba(8.63%, 5.88%, 3.14%, 0.84)
+  );
+  padding: 70px 10px 5px 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.header img {
+  height: 110px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.header h3 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+.header p {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.header p:hover {
+  text-decoration: underline;
+}
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid #d7d7d7;
+}
+.navigator span {
+  cursor: pointer;
+}
+.navigator span:hover {
+  opacity: 0.7;
+}
+.hidden {
+  visibility: hidden;
+}
+.episodes_count {
+  margin: 5px 0 20px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.episodes_list {
+  width: 90%;
+  margin: 20px auto;
+}
+.episode {
+  margin-top: 20px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.episode img {
+  width: 100%;
+}
+.title {
+  margin: 5px 0;
+  font-size: 1.8rem;
+}
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  font-weight: 700;
+}
+.meta i {
+  color: #c39400;
+}
+.overview {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  line-height: 1.25rem;
+}
+.crew {
+  font-weight: 500;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+.guest_stars {
+  margin: 15px 0;
+}
+.guest_stars h4 {
+  font-size: 1rem;
+}
+.guest_stars_list {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+}
+.guest_star {
+  display: flex;
+  align-items: center;
+}
+.guest_star img {
+  width: 55px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.names {
+  font-size: 0.9rem;
+}
+.names p {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 450px) {
+  .header {
+    padding: 70px 10px 10px 30px !important;
+  }
+  .header img {
+    height: 150px;
+  }
+  .header h3 {
+    font-size: 1.4rem;
+  }
+  .header p {
+    font-size: 1.1rem;
+  }
+  .navigator {
+    font-size: 1rem;
+  }
+  .guest_stars_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .episode {
+    display: flex;
+    padding-right: 40px;
+  }
+  .episode img {
+    height: 180px;
+    width: auto;
+    margin-right: 20px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .meta {
+    font-size: 1rem;
+  }
+  .overview {
+    margin: 20px 0;
+    font-size: 1rem;
+  }
+  .guest_stars {
+    margin: 20px 0;
+  }
+  .guest_stars h4 {
+    font-size: 1.2rem;
+  }
+  .guest_stars_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .guest_star img {
+    height: 90px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .guest_stars_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
